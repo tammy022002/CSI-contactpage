@@ -1,0 +1,198 @@
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+	background: radial-gradient(circle, #75008d, #f564d3);
+}
+
+header {
+	background: radial-gradient(circle, #78026e, #af3f95);
+	color: white;
+	padding: 0px;
+	text-align: center;
+}
+
+main {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 20px;
+}
+
+section {
+	flex: 1;
+	margin: 10px;
+}
+
+#lorem-ipsum {
+	background-color: #f2f2f22f;
+	padding: 20px;
+	border-radius: 55px;
+}
+
+#lorem-ipsum h2 {
+	margin-bottom: 10px;
+}
+
+#lorem-ipsum p {
+	margin-bottom: 20px;
+}
+
+.attribution {
+	font-size: smaller;
+}
+
+#contact-us {
+	background-color: #f2f2f22f;
+	padding: 20px;
+	text-align: center;
+	border-radius: 55px;
+}
+
+#contact-us h2 {
+	margin-bottom: 10px;
+}
+
+#contact-us form {
+	margin-bottom: 20px;
+}
+
+#contact-us label {
+	display: block;
+	margin-bottom: 5px;
+    width: 48%; /* Set a width for labels to create space between them */
+    margin-bottom: 10px; /* Add some margin for spacing */
+    box-sizing: border-box;
+
+}
+
+
+#contact-us input
+{   width: 100%; /* Make input fields take up the full width of their container */
+    padding: 5px; /* Add some padding for better aesthetics */
+    box-sizing: border-box; 
+}
+    
+#contact-us textarea {
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#contact-us button[type="submit"] {
+	background-color: #333;
+	border: none;
+	color: white;
+	padding: 10px 20px;
+	cursor: pointer;
+}
+
+#contact-us button[type="submit"]:hover {
+	background-color: #444;
+}
+
+#social-media {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+}
+.row {
+    display: flex;
+	background-color: #f2f2f22f;
+
+}
+
+/* Style individual form elements */
+.row label,
+.row input {
+    width: calc(30% - 0px); /* Set a width for labels and inputs with a small gap in between */
+    margin-bottom: 0px; /* Add some margin for spacing */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+
+
+}
+
+label,
+textarea {
+    margin-bottom: 10px; /* Add some margin for spacing */
+    display: block;
+    border-radius: 15px;
+
+
+}
+
+input,
+textarea {
+    width: 100%; /* Make input fields take up the full width of their container */
+    padding: 5px; /* Add some padding for better aesthetics */
+    box-sizing: border-box; /* Include padding and border in the width calculation */
+    border-radius: 15px;
+	background-color: #f2f2f22f;
+
+}
+
+button {
+    width: 40%;
+    padding: 10px;
+    height: 40px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+#social-media li {
+	margin: 0 5px;
+}
+
+#social-media a {
+	text-decoration: none;
+}
+
+footer {
+	background-color: #333;
+	color: white;
+	padding: 10px;
+	text-align: center;
+}
+
+footer a {
+	color: white;
+	text-decoration: none;
+	margin: 0 5px;
+}
+
+footer a:hover {
+	color: #ccc;
+}
+
+@media only screen and (max-width: 568px) {
+    main {
+        flex-direction: row;
+    }
+
+    section {
+        margin: 10px 0;
+    }
+
+    #contact-us label,
+    #contact-us input,
+    #contact-us textarea {
+        width: 100%;
+    }
+
+    #social-media {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+}
